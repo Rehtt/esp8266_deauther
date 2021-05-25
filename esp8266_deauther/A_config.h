@@ -421,6 +421,11 @@
   #define AP_IP_ADDR { 192, 168, 4, 1 }
 #endif /* ifndef AP_IP_ADDR */
 
+// ===== 电量百分比显示  ====== //
+#ifndef BAT_PRE
+  #define BAT_PRE true
+#endif
+
 // ===== WEB INTERFACE ===== //
 #ifndef WEB_ENABLED
   #define WEB_ENABLED true

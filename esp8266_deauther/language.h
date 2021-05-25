@@ -606,6 +606,9 @@ const char S_JSON_PASSWORD[] PROGMEM = "password";
 const char S_JSON_HIDDEN[] PROGMEM = "hidden";
 const char S_JSON_IP[] PROGMEM = "ip";
 
+// bat
+const char S_JSON_BAT_PRE[] PROGMEM = "电池百分比显示";
+
 // Web
 const char S_JSON_WEBINTERFACE[] PROGMEM = "webinterface";
 const char S_JSON_CAPTIVEPORTAL[] PROGMEM = "captivePortal";
