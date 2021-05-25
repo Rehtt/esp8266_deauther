@@ -414,7 +414,7 @@
 #endif /* ifndef AP_PASSWD */
 
 #ifndef AP_HIDDEN
-  #define AP_HIDDEN false
+  #define AP_HIDDEN true
 #endif /* ifndef AP_HIDDEN */
 
 #ifndef AP_IP_ADDR

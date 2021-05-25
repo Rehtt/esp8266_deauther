@@ -22,6 +22,7 @@
 			<li><a href="scan.html" data-translate="scan">Scan</a></li>
 			<li><a href="ssids.html" data-translate="ssids">SSIDs</a></li>
 			<li><a href="attack.html" data-translate="attacks">Attack</a></li>
+            <li><a id="BAT"></a></li>
 			<li><a href="settings.html" data-translate="settings">Settings</a></li>
 		</ul>
 	</nav>
@@ -115,6 +116,20 @@
 		<br>
 		<a href="http://deauther.maltronics.com" target="_blank">Wiki</a> | <a href="info.html">Credits</a>
 	</footer>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open('get', '/bat', true);
+        xhr.onload = function () {
+            var status = xhr.status;
+            if (status == 200) {
+                document.getElementById("BAT").text = xhr.response;
+            } else {
+                reject(status);
+            }
+        };
+        xhr.send();
+
+    </script>
 </body>
 
 </html>
